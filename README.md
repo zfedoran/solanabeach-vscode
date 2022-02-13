@@ -7,7 +7,7 @@ No, I don't remember it either, but with this experimental theme we can go there
 
 This theme is a fork of the awesome SynthWave '84 theme. Much thanks to Robb Owen for this.
 
-__As of v0.1.0, no external extensions are needed to activate the glow effect!__ 
+__As of February 9th 2022, it seems that the glow effect no longer works reliably with the latest release of Visual Code. Stay tuned, we're working on finding the source of the issue.__
 
 ![Neon glowing text](./theme.png)
 
