@@ -1,60 +1,61 @@
 {
-    "name": "synthwave-vscode",
-    "displayName": "SynthWave '84",
-    "description": "A Synthwave-inspired colour theme to satisfy your neon dreams",
+    "name": "solanabeach-vscode",
+    "displayName": "Solana Beach '22",
+    "description": "A Solana take on the SynthWave '84 theme",
     "version": "0.1.11",
-    "author": "Robb Owen",
-    "publisher": "RobbOwen",
+    "author": "Zelimir Fedoran",
+    "publisher": "ZelimirFedoran",
     "icon": "icon.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/robb0wen/synthwave-vscode"
+        "url": "https://github.com/zfedoran/solanabeach-vscode"
     },
     "engines": {
         "vscode": "^1.33.0"
     },
     "keywords": [
-        "retro",
-        "80s"
+        "solana",
+        "blockchain",
+        "solanabeach"
     ],
     "categories": [
         "Themes"
     ],
     "activationEvents": [
         "*",
-        "onCommand:synthwave84.enableNeon"
+        "onCommand:solanabeach22.enableNeon"
     ],
     "main": "./src/extension.js",
     "contributes": {
         "themes": [
             {
-                "label": "SynthWave '84",
+                "label": "Solana Beach '22",
                 "uiTheme": "vs-dark",
-                "path": "./themes/synthwave-color-theme.json"
+                "path": "./themes/solanabeach-color-theme.json"
             }
         ],
         "commands": [
             {
-                "command": "synthwave84.enableNeon",
-                "title": "Synthwave '84: Enable Neon Dreams"
+                "command": "solanabeach22.enableNeon",
+                "title": "SolanaBeach '22: Enable Neon Dreams"
             },
             {
-                "command": "synthwave84.disableNeon",
-                "title": "Synthwave '84: Disable Neon Dreams"
+                "command": "solanabeach22.disableNeon",
+                "title": "SolanaBeach '22: Disable Neon Dreams"
             }
         ],
         "configuration": {
-            "title": "Synthwave '84",
+            "title": "SolanaBeach '22",
             "properties": {
-                "synthwave84.brightness": {
+                "solanabeach22.brightness": {
                     "type": "number",
                     "default": 0.45,
                     "description": "Set the brightness value for the glow effect. 0.0 is fully transparent and 1.0 is fully bright"
                 },
-                "synthwave84.disableGlow": {
+                "solanabeach22.disableGlow": {
                     "type": "boolean",
                     "default": false,
-                    "description": "Disable the glow effect, but show Synthwave '84 editor chrome updates"
+                    "description": "Disable the glow effect, but show SolanaBeach '22 editor chrome updates"
                 }
             }
         }

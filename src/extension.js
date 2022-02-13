@@ -7,10 +7,12 @@ const diff = require('semver/functions/diff');
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-	this.extensionName = 'RobbOwen.synthwave-vscode';
+	this.extensionName = 'ZelimirFedoran.solanabeach-vscode';
 	this.cntx = context;
+
+	const cache_bust = '?v=' + Math.random();	
 	
-	const config = vscode.workspace.getConfiguration("synthwave84");
+	const config = vscode.workspace.getConfiguration("solanabeach22");
 
 	let disableGlow = config && config.disableGlow ? !!config.disableGlow : false;
 	
@@ -21,7 +23,7 @@ function activate(context) {
 	const parsedBrightness = Math.floor(brightness * 255).toString(16).toUpperCase();
 	let neonBrightness = parsedBrightness;
 
-	let disposable = vscode.commands.registerCommand('synthwave84.enableNeon', function () {
+	let disposable = vscode.commands.registerCommand('solanabeach22.enableNeon', function () {
 
 		const isWin = /^win/.test(process.platform);
 		const appDir = path.dirname(require.main.filename);
@@ -36,8 +38,8 @@ function activate(context) {
 		const templateFile =
 				base +
 				(isWin
-					? "\\electron-browser\\workbench\\neondreams.js"
-					: "/electron-browser/workbench/neondreams.js");
+					? "\\electron-browser\\workbench\\solana-solanabeach.js"
+					: "/electron-browser/workbench/solana-solanabeach.js");
 
 		try {
 
@@ -55,13 +57,13 @@ function activate(context) {
 			const html = fs.readFileSync(htmlFile, "utf-8");
 
 			// check if the tag is already there
-			const isEnabled = html.includes("neondreams.js");
+			const isEnabled = html.includes("solana-solanabeach.js");
 
 			if (!isEnabled) {
-				// delete synthwave script tag if there
-				let output = html.replace(/^.*(<!-- SYNTHWAVE 84 --><script src="neondreams.js"><\/script><!-- NEON DREAMS -->).*\n?/mg, '');
+				// delete solanabeach script tag if there
+				let output = html.replace(/^.*(<!-- SOLANABEACH 22 --><script src="solana-solanabeach.js(\?v=0\.\d+)?"><\/script><!-- NEON DREAMS -->).*\n?/mg, '');
 				// add script tag
-				output = html.replace(/\<\/html\>/g, `	<!-- SYNTHWAVE 84 --><script src="neondreams.js"></script><!-- NEON DREAMS -->\n`);
+				output = html.replace(/\<\/html\>/g, `	<!-- SOLANABEACH 22 --><script src="solana-solanabeach.js`+cache_bust+`"></script><!-- NEON DREAMS -->\n`);
 				output += '</html>';
 	
 				fs.writeFileSync(htmlFile, output, "utf-8");
@@ -90,7 +92,7 @@ function activate(context) {
 		}
 	});
 
-	let disable = vscode.commands.registerCommand('synthwave84.disableNeon', uninstall);
+	let disable = vscode.commands.registerCommand('solanabeach22.disableNeon', uninstall);
 	
 	context.subscriptions.push(disposable);
 	context.subscriptions.push(disable);
@@ -116,11 +118,11 @@ function uninstall() {
 	const html = fs.readFileSync(htmlFile, "utf-8");
 
 	// check if the tag is already there
-	const isEnabled = html.includes("neondreams.js");
+	const isEnabled = html.includes("solana-solanabeach.js");
 
 	if (isEnabled) {
-		// delete synthwave script tag if there
-		let output = html.replace(/^.*(<!-- SYNTHWAVE 84 --><script src="neondreams.js"><\/script><!-- NEON DREAMS -->).*\n?/mg, '');
+		// delete solanabeach script tag if there
+		let output = html.replace(/^.*(<!-- SOLANABEACH 22 --><script src="solana-solanabeach.js"><\/script><!-- NEON DREAMS -->).*\n?/mg, '');
 		fs.writeFileSync(htmlFile, output, "utf-8");
 
 		vscode.window
