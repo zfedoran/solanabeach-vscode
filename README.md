@@ -7,9 +7,9 @@ No, I don't remember it either, but with this experimental theme we can go there
 
 This theme is a fork of the awesome SynthWave '84 theme. Much thanks to Robb Owen for this.
 
-__As of February 9th 2022, it seems that the glow effect no longer works reliably with the latest release of Visual Code. Stay tuned, we're working on finding the source of the issue.__
+__As of v0.1.15, no external extensions or dependencies are needed to activate the glow effect!__
 
-![Neon glowing text](./theme.png)
+![Neon glowing text](./theme-neon.png)
 
 This colour scheme is influenced by the Solana homepage and those awesome Sunglasses.
 
@@ -69,6 +69,12 @@ I haven't included a font in this release as I know that it's a very personal pr
 
 ## Compatibility
 This theme is still **very much a work in progress**. I primarily develop in Rust, Go, and Node so, whilst those language sets should look pretty good, there will likely be issues for other languages. I'll work on adding more support as I go. If you find anything glaringly wrong, raise an issue and I'll try to fix it as soon as I can.
+
+## Without Neon
+The theme is designed to work without neon enabled. Here is an example.
+
+![Neon glowing text](./theme.png)
+
 
 ## Contributing
 I'm really happy to consider any contributions to this theme. Before you make any changes, [please read the contribution guide](https://github.com/zfedoran/solanabeach-vscode/blob/master/CONTRIBUTING.md).

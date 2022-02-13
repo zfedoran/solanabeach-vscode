@@ -2,7 +2,7 @@
     "name": "solanabeach-vscode",
     "displayName": "Solana Beach '22",
     "description": "A Solana take on the SynthWave '84 theme",
-    "version": "0.1.14",
+    "version": "0.1.15",
     "author": "Zelimir Fedoran",
     "publisher": "zfedoran",
     "icon": "icon.png",
@@ -11,11 +11,10 @@
         "url": "https://github.com/zfedoran/solanabeach-vscode"
     },
     "engines": {
-        "vscode": "^1.33.0"
+        "vscode": "^1.64.0"
     },
     "keywords": [
         "solana",
-        "blockchain",
         "solanabeach"
     ],
     "categories": [
@@ -49,7 +48,7 @@
             "properties": {
                 "solanabeach22.brightness": {
                     "type": "number",
-                    "default": 0.45,
+                    "default": 0.32,
                     "description": "Set the brightness value for the glow effect. 0.0 is fully transparent and 1.0 is fully bright"
                 },
                 "solanabeach22.disableGlow": {
@@ -61,6 +60,5 @@
         }
     },
     "dependencies": {
-        "semver": "^7.1.1"
     }
 }

@@ -1,13 +1,12 @@
 const path = require('path');
 const fs = require('fs');
 const vscode = require('vscode');
-const diff = require('semver/functions/diff');
 
 /**
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-	this.extensionName = 'ZelimirFedoran.solanabeach-vscode';
+	this.extensionName = 'zfedoran.solanabeach-vscode';
 	this.cntx = context;
 	
 	const config = vscode.workspace.getConfiguration("solanabeach22");
@@ -36,8 +35,8 @@ function activate(context) {
 		const templateFile =
 				base +
 				(isWin
-					? "\\electron-browser\\workbench\\solana-solanabeach.js"
-					: "/electron-browser/workbench/solana-solanabeach.js");
+					? "\\electron-browser\\workbench\\solanabeach.js"
+					: "/electron-browser/workbench/solanabeach.js");
 
 		try {
 
@@ -55,13 +54,13 @@ function activate(context) {
 			const html = fs.readFileSync(htmlFile, "utf-8");
 
 			// check if the tag is already there
-			const isEnabled = html.includes("solana-solanabeach.js");
+			const isEnabled = html.includes("solanabeach.js");
 
 			if (!isEnabled) {
 				// delete solanabeach script tag if there
-				let output = html.replace(/^.*(<!-- SOLANABEACH 22 --><script src="solana-solanabeach.js"><\/script><!-- NEON DREAMS -->).*\n?/mg, '');
+				let output = html.replace(/^.*(<!-- SOLANABEACH 22 --><script src="solanabeach.js"><\/script><!-- NEON DREAMS -->).*\n?/mg, '');
 				// add script tag
-				output = html.replace(/\<\/html\>/g, `	<!-- SOLANABEACH 22 --><script src="solana-solanabeach.js"></script><!-- NEON DREAMS -->\n`);
+				output = html.replace(/\<\/html\>/g, `	<!-- SOLANABEACH 22 --><script src="solanabeach.js"></script><!-- NEON DREAMS -->\n`);
 				output += '</html>';
 	
 				fs.writeFileSync(htmlFile, output, "utf-8");
@@ -116,11 +115,11 @@ function uninstall() {
 	const html = fs.readFileSync(htmlFile, "utf-8");
 
 	// check if the tag is already there
-	const isEnabled = html.includes("solana-solanabeach.js");
+	const isEnabled = html.includes("solanabeach.js");
 
 	if (isEnabled) {
 		// delete solanabeach script tag if there
-		let output = html.replace(/^.*(<!-- SOLANABEACH 22 --><script src="solana-solanabeach.js"><\/script><!-- NEON DREAMS -->).*\n?/mg, '');
+		let output = html.replace(/^.*(<!-- SOLANABEACH 22 --><script src="solanabeach.js"><\/script><!-- NEON DREAMS -->).*\n?/mg, '');
 		fs.writeFileSync(htmlFile, output, "utf-8");
 
 		vscode.window
