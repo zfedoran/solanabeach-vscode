@@ -18,7 +18,7 @@
     if (!disableGlow) {
 
       /* replace yellow */
-      updatedThemeStyles = updatedThemeStyles.replace(/color: #19f99a;/g, "color: #f4eee4; text-shadow: 0 0 2px #393a33, 0 0 8px #f39f05[NEON_BRIGHTNESS], 0 0 2px #f39f05[NEON_BRIGHTNESS]; backface-visibility: hidden;");
+      updatedThemeStyles = updatedThemeStyles.replace(/color: #f4eee4;/g, "color: #f4eee4; text-shadow: 0 0 2px #393a33, 0 0 8px #f39f05[NEON_BRIGHTNESS], 0 0 2px #f39f05[NEON_BRIGHTNESS]; backface-visibility: hidden;");
       
       /* replace green */
       //updatedThemeStyles = updatedThemeStyles.replace(/color: #18ef95;/g, "color: #fdfdfd; text-shadow: 0 0 2px #001716, 0 0 3px #03edf9[NEON_BRIGHTNESS], 0 0 5px #03edf9[NEON_BRIGHTNESS], 0 0 8px #03edf9[NEON_BRIGHTNESS]; backface-visibility: hidden;");

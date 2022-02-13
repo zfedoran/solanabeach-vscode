@@ -121,7 +121,7 @@
     "terminal.ansiBrightGreen": "#72f1b8",
     "terminal.ansiBrightMagenta": "#c947dc",
     "terminal.ansiBrightRed": "#18ef95",
-    "terminal.ansiBrightYellow": "#19f99a",
+    "terminal.ansiBrightYellow": "#f4eee4",
     "terminal.ansiCyan": "#03edf9",
     "terminal.ansiGreen": "#72f1b8",
     "terminal.ansiMagenta": "#c947dc",
@@ -200,7 +200,7 @@
       "name": "Storage (declaration or modifier keyword)",
       "scope": ["storage.type", "storage.modifier"],
       "settings": {
-        "foreground": "#19f99a"
+        "foreground": "#f4eee4"
       }
     },
     {
@@ -242,7 +242,7 @@
       "name": "Entity",
       "scope": "entity.name",
       "settings": {
-        "foreground": "#ff8b39"
+        "foreground": "#18ef95"
       }
     },
     {
@@ -263,14 +263,14 @@
       "name": "Tag attribute",
       "scope": "entity.other.attribute-name",
       "settings": {
-        "foreground": "#19f99a"
+        "foreground": "#f4eee4"
       }
     },
     {
       "name": "Tag attribute HTML",
       "scope": "entity.other.attribute-name.html",
       "settings": {
-        "foreground": "#19f99a",
+        "foreground": "#f4eee4",
         "fontStyle": "italic"
       }
     },
@@ -313,21 +313,21 @@
       "name": "Keyword",
       "scope": "keyword",
       "settings": {
-        "foreground": "#19f99a"
+        "foreground": "#f4eee4"
       }
     },
     {
       "name": "Control keyword",
       "scope": "keyword.control",
       "settings": {
-        "foreground": "#19f99a"
+        "foreground": "#f4eee4"
       }
     },
     {
       "name": "Operator",
       "scope": "keyword.operator",
       "settings": {
-        "foreground": "#19f99a"
+        "foreground": "#f4eee4"
       }
     },
     {
@@ -338,7 +338,7 @@
         "keyword.operator.logical"
       ],
       "settings": {
-        "foreground": "#19f99a"
+        "foreground": "#f4eee4"
       }
     },
     {
@@ -387,7 +387,7 @@
       "name": "Embedded punctuation",
       "scope": "punctuation.section.embedded",
       "settings": {
-        "foreground": "#19f99a"
+        "foreground": "#f4eee4"
       }
     },
     {
@@ -572,7 +572,7 @@
       "name": "C++ operators",
       "scope": "source.cpp keyword.operator",
       "settings": {
-        "foreground": "#19f99a"
+        "foreground": "#f4eee4"
       }
     },
     {
@@ -716,6 +716,16 @@
       }
     },
     {
+      "name": "Go Imports",
+      "scope": [
+        "source.go string.quoted.double.go",
+        "source.go entity.name.import.go",
+      ],
+      "settings": {
+        "foreground": "#ff8b39"
+      }
+    },
+    {
       "name": "Go Keywords",
       "scope": [
         "source.go keyword.package.go",
@@ -729,7 +739,7 @@
         "source.go keyword.control.go"
       ],
       "settings": {
-        "foreground": "#19f99a",
+        "foreground": "#f4eee4",
       }
     },
     {
@@ -771,7 +781,7 @@
         "string.other.link.title.markdown"
       ],
       "settings": {
-        "foreground": "#19f99a"
+        "foreground": "#f4eee4"
       }
     },
     {
