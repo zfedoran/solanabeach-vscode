@@ -698,14 +698,28 @@
         "meta.symbol.clojure"
       ],
       "settings": {
-        "foreground": "#c947dcff"
+        "foreground": "#c947dc"
       }
     },
     {
       "name": "Go basic",
       "scope": "source.go",
       "settings": {
-        "foreground": "#c947dcff"
+        "foreground": "#9945FF"
+      }
+    },
+    {
+      "name": "Go punctuation",
+      "scope": "source.go punctuation.definition",
+      "settings": {
+        "foreground": "#BBBBBB"
+      }
+    },
+    {
+      "name": "Go comment",
+      "scope": "punctuation.definition.comment.go",
+      "settings": {
+        "foreground": "#848BBD"
       }
     },
     {
@@ -736,7 +750,8 @@
         "source.go keyword.var.go",
         "source.go keyword.map.go",
         "source.go keyword.channel.go",
-        "source.go keyword.control.go"
+        "source.go keyword.control.go",
+        "source.go punctuation.other.period.go",
       ],
       "settings": {
         "foreground": "#f4eee4",
@@ -745,12 +760,11 @@
     {
       "name": "Go interfaces",
       "scope": [
-        "source.go storage.type",
         "source.go keyword.struct.go",
         "source.go keyword.interface.go",
       ],
       "settings": {
-        "foreground": "#72f1b8",
+        "foreground": "#a5f8d3",
       }
     },
     {
@@ -758,10 +772,12 @@
       "scope": [
         "source.go constant.language.go",
         "source.go constant.other.placeholder.go",
-        "source.go variable"
+        "source.go variable",
+        "source.go storage.type",
+        "source.go support.function.go"
       ],
       "settings": {
-        "foreground": "#2EE2FA"
+        "foreground": "#18ef95",
       }
     },
     {
@@ -829,7 +845,7 @@
       "name": "Basic source colours",
       "scope": ["source.dart", "source.python", "source.scala"],
       "settings": {
-        "foreground": "#c947dcff"
+        "foreground": "#c947dc"
       }
     },
     {
