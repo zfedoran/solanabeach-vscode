@@ -242,7 +242,7 @@
       "name": "Entity",
       "scope": "entity.name",
       "settings": {
-        "foreground": "#18ef95"
+        "foreground": "#ff8b39"
       }
     },
     {
