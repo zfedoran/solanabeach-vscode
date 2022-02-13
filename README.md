@@ -11,7 +11,7 @@ __As of v0.1.0, no external extensions are needed to activate the glow effect!__
 
 ![Neon glowing text](./theme.png)
 
-This colour scheme is influenced by the Solana homepage and those awesome Sunglasses glasses.
+This colour scheme is influenced by the Solana homepage and those awesome Sunglasses.
 
 ## But...why?
 Because we deserve a theme.
