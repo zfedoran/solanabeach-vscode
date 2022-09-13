@@ -29,14 +29,14 @@ function activate(context) {
 		const htmlFile =
 			base +
 			(isWin
-				? "\\electron-browser\\workbench\\workbench.html"
-				: "/electron-browser/workbench/workbench.html");
+				? "\\electron-sandbox\\workbench\\workbench.html"
+				: "/electron-sandbox/workbench/workbench.html");
 
 		const templateFile =
 				base +
 				(isWin
-					? "\\electron-browser\\workbench\\solanabeach.js"
-					: "/electron-browser/workbench/solanabeach.js");
+					? "\\electron-sandbox\\workbench\\solanabeach.js"
+					: "/electron-sandbox/workbench/solanabeach.js");
 
 		try {
 
@@ -108,8 +108,8 @@ function uninstall() {
 	var htmlFile =
 		base +
 		(isWin
-			? "\\electron-browser\\workbench\\workbench.html"
-			: "/electron-browser/workbench/workbench.html");
+			? "\\electron-sandbox\\workbench\\workbench.html"
+			: "/electron-sandbox/workbench/workbench.html");
 
 	// modify workbench html
 	const html = fs.readFileSync(htmlFile, "utf-8");
