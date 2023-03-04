@@ -21,8 +21,8 @@
         "Themes"
     ],
     "activationEvents": [
-        "*",
-        "onCommand:solanabeach22.enableNeon"
+        "onCommand:solanabeach22.enableNeon",
+        "onCommand:solanabeach22.disableNeon"
     ],
     "main": "./src/extension.js",
     "contributes": {
