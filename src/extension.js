@@ -23,8 +23,8 @@ function activate(context) {
 	let disposable = vscode.commands.registerCommand('solanabeach22.enableNeon', function () {
 
 		const isWin = /^win/.test(process.platform);
-		const appDir = path.dirname(require.main.filename);
-		const base = appDir + (isWin ? "\\vs\\code" : "/vs/code");
+		const appDir = path.dirname(vscode.env.appRoot);
+		const base = appDir + (isWin ? "\\app\\out\\vs\\code" : "/app/out/vs/code");
 
 		const htmlFile =
 			base +
